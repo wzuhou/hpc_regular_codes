@@ -1,2 +1,2 @@
-# hpc_Storage_check
-Check your storage on hpc
+# hpc_regular_codes
+1. Check your storage on hpc
