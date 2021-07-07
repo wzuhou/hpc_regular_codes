@@ -262,3 +262,13 @@ echo '========================================================================='
 cd /exports/eddie/scratch/$USER/BLAST
 blastx -outfmt "6" -query est_split$(printf "%02d" $((SGE_TASK_ID - 1))) -db nem.fasta
 echo '========================================================================='
+
+
+
+#The Eddie filesystem keeps a number of days of daily snapshots that can be used to recover accidentally deleted or previous versions of files.
+
+#Look in /exports/.snapshots 
+
+#You will see a number of directories named according to the time the snapshot was taken. Choose one of these directories and use cd to change to the snapshot of your home directory. Have a look around. In particular (if you have not been on an Introduction to Eddie course before), you will find that the directory IS_Courses/eddie is missing from the snapshot.
+
+#Hint: the full path to a snapshot of your home directory is: /exports/.snapshots/<snapshot timestamp>/eddie3_homes_local/$USER
