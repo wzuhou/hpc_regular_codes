@@ -1,7 +1,7 @@
 #!/bin/bash
 #For all submission scripts, when you have submitted a job, you can monitor its progress easily with the following command:
 watch -n 10 qstat -r -u $USER
-
+#Much of the output is self explanatory. The state column letter codes are: d(eletion), E(rror), h(old), q(ueued), r(unning), R(estarted), s(uspended), S(uspended), t(ransfering), T(hreshold) or w(aiting). 
 ###########################################
 #                                         #
 # Submit a job which uses some installed  #
