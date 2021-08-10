@@ -111,23 +111,3 @@ echo '========================================================================='
  
 #What execution order do you expect? What happens?
 #######################################
-
-
-
-#Blast
-#This complete workflow shows how complex tasks can be assembled within Grid Engine.
-#The Task breakdown is as follows: 
-#1. Stage in some data from the bulk storage (DataStore).
- 
-#2. Preprocess the data (split it up into pieces)
- 
-#3. Perform some embarrassingly parallel calculations on the data (in an array job)
- 
-#4. Reduce the data
- 
-#5. Stage results back to DataStore
- 
-#6. Cleanup of the temporary data.
-
-
-
