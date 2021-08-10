@@ -14,3 +14,6 @@
 5. Stage results back to DataStore
  
 6. Cleanup of the temporary data.
+
+run_efetch.sh
+Parse_efetch.py
