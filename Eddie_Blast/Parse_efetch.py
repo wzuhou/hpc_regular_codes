@@ -1,7 +1,6 @@
 #!/bin/python3
 
 from sys import argv
-
 ####Usage
 ####py [this script.py] *.efetch > output.efetch.table
 ####
@@ -29,10 +28,16 @@ def parse_efetch(lines):
             genes.append((ncbi,ID,species))
             #print(geines)
     genes.append((ncbi,ID,species))
+    #list(dict.fromkeys(genes))
     return genes
+
+def removeDuplicates(lst):
+      
+    return [t for t in (set(tuple(i) for i in lst))]
 
 if __name__ == "__main__":
     inp_fn=argv[1]
     parse_table=parse_efetch(open(inp_fn))
-    for i in parse_table:
+    parse_table2=removeDuplicates(parse_table)
+    for i in parse_table2:
         print('{0}\t{1}\t{2}'.format(i[0],i[1],i[2]))
