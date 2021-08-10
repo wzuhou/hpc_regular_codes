@@ -1,6 +1,6 @@
 # **Blast**
 
-## This complete workflow shows how complex tasks can be assembled within Grid Engine.
+**This complete workflow shows how complex tasks can be assembled within Grid Engine.**
 ## The Task breakdown is as follows: 
 
 1. Stage in some data from the bulk storage (DataStore).
