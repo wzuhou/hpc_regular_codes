@@ -15,5 +15,7 @@
  
 6. Cleanup of the temporary data.
 
-run_efetch.sh
-Parse_efetch.py
+## Additional parsing and processing of blast output
+`run_efetch.sh`
+`Parse_efetch.py`
+
