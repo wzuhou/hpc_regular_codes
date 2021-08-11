@@ -18,10 +18,11 @@
 ## Additional parsing and processing of blast output
 `run_efetch.sh`
 `Parse_efetch.py`
+
 #efetch output could have multiple '(' to test:
 `bash
 grep -E "(\(.*){2}" myfile
 grep -E "(\(.*){3}" myfile
-# adjust the parsing code accordingly
+#adjust the parsing code accordingly
 `
 
