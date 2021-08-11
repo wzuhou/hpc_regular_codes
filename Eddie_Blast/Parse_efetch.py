@@ -2,14 +2,15 @@
 
 from sys import argv
 ####Usage
-####py [this script.py] *.efetch > output.efetch.table
+####python [this script.py] *.efetch > output.efetch.table
 ####
 def parse_efetch(lines):
     """
     genes=[(ncbi,ID,species)]
     """
     genes=[]
-    #count=0
+    count=0
+    substring='('
     ncbi=''
     ID=''
     species=''
@@ -24,8 +25,15 @@ def parse_efetch(lines):
             species1=line.split(' ')[2]
             species2=line.split(' ')[3]
             species=species1+' ' +species2
-            ID=(line.split('(')[1]).split(')')[0]
+            count = line.count(substring)
+            if count ==1 :
+                ID=(line.split('(')[1]).split(')')[0]
+            elif count == 2:
+                ID=(line.split('(')[2]).split(')')[0]
+            elif count ==3:
+                ID=(line.split('(')[3]).split(')')[0]
             genes.append((ncbi,ID,species))
+            count =0
             #print(geines)
     genes.append((ncbi,ID,species))
     #list(dict.fromkeys(genes))
