@@ -29,3 +29,25 @@ INFO:    Cleaning up image...
 $ logout
 Connection to node2f23.ecdf.ed.ac.uk closed.
 /exports/applications/gridengine/2011.11p1_155/util/qlogin_wrapper exited with exit code 0
+-------------------------------
+Downloading containers
+In the last section, we validated our Singularity installation by “running” a container from the Container Library. Let’s download that container using the pull command.
+
+$ cd ~
+
+$ singularity pull library://godlovedc/funny/lolcow
+You’ll see a warning about running singularity verify to make sure that the container is trusted. We’ll talk more about that later.
+
+For now, notice that you have a new file in your current working directory called lolcow_latest.sif
+
+$ ls lolcow_latest.sif
+lolcow_latest.sif
+
+
+Entering containers with shell
+Now let’s enter our new container and look around. We can do so with the shell command.
+
+$ singularity shell lolcow_latest.sif
+
+
+
