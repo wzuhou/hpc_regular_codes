@@ -9,7 +9,7 @@ Establishing /exports/applications/gridengine/2011.11p1_155/util/qlogin_wrapper 
 $ module load singularity
 $ export SINGULARITY_TMPDIR=$TMPDIR
 #$ export SINGULARITY_CACHEDIR=/exports/eddie/scratch/<USER>/singularity
-$ export SINGULARITY_TMPDIR=$/exports/cmvm/eddie/eb/groups/smith_grp/Zhou_wu/Install/Singularity
+$ export SINGULARITY_CACHEDIR=$/exports/cmvm/eddie/eb/groups/smith_grp/Zhou_wu/Install/Singularity
 $ singularity run library://crown421/default/juliabase
 INFO:    Downloading library image
 INFO:    Convert SIF file to sandbox...
@@ -40,14 +40,25 @@ You’ll see a warning about running singularity verify to make sure that the co
 
 For now, notice that you have a new file in your current working directory called lolcow_latest.sif
 
+```
 $ ls lolcow_latest.sif
 lolcow_latest.sif
-
+```
 
 Entering containers with shell
 Now let’s enter our new container and look around. We can do so with the shell command.
 
 $ singularity shell lolcow_latest.sif
 
+Let’s try a few more commands:
+```
+Singularity> whoami
+dave
 
+Singularity> hostname
+hal-9000
+```
+
+
+Once again, this is an important concept in Singularity. If you enter a container without root privileges, you are unable to obtain root privileges within the container. This insurance against privilege escalation is the reason that you will find Singularity installed in so many HPC environments.
 
