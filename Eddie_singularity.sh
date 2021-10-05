@@ -8,7 +8,8 @@ Establishing /exports/applications/gridengine/2011.11p1_155/util/qlogin_wrapper 
 
 $ module load singularity
 $ export SINGULARITY_TMPDIR=$TMPDIR
-$ export SINGULARITY_CACHEDIR=/exports/eddie/scratch/<USER>/singularity
+#$ export SINGULARITY_CACHEDIR=/exports/eddie/scratch/<USER>/singularity
+$ export SINGULARITY_TMPDIR=$/exports/cmvm/eddie/eb/groups/smith_grp/Zhou_wu/Install/Singularity
 $ singularity run library://crown421/default/juliabase
 INFO:    Downloading library image
 INFO:    Convert SIF file to sandbox...
