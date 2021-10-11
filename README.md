@@ -3,3 +3,6 @@
 
 # Exercises and Examples for using Eddie
 2. Eddie_run_job.sh ( *e.g.: Arrya, Multithreads, dependencies, gpu* )
+Max number of cores: 16
+Max Memory required: 64 GB
+
