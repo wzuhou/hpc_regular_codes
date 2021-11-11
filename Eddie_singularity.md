@@ -9,7 +9,7 @@ Establishing /exports/applications/gridengine/2011.11p1_155/util/qlogin_wrapper 
 $ module load singularity
 $ export SINGULARITY_TMPDIR=$TMPDIR
 #$ export SINGULARITY_CACHEDIR=/exports/eddie/scratch/<USER>/singularity
-$ export SINGULARITY_CACHEDIR=$/exports/cmvm/eddie/eb/groups/smith_grp/Zhou_wu/Install/Singularity
+$ export SINGULARITY_CACHEDIR=/exports/cmvm/eddie/eb/groups/smith_grp/Zhou_wu/Install/Singularity
 $ singularity run library://crown421/default/juliabase
 INFO:    Downloading library image
 INFO:    Convert SIF file to sandbox...
@@ -39,6 +39,8 @@ $ singularity pull library://godlovedc/funny/lolcow
 You’ll see a warning about running singularity verify to make sure that the container is trusted. We’ll talk more about that later.
 
 For now, notice that you have a new file in your current working directory called lolcow_latest.sif
+#pull docker image by using singularity run
+singularity run library://<url>
 
 ```
 $ ls lolcow_latest.sif
