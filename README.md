@@ -2,11 +2,12 @@
 1. Check your storage on hpc
 
 # Exercises and Examples for using Eddie
-2. Eddie_run_job.sh ( *e.g.: Array, Multithreads, dependencies, gpu* )
 
 Max number of cores: 16
 
 Max Memory required: 64 GB
+
+2. Eddie_run_job.sh ( *e.g.: Array, Multithreads, dependencies, gpu* )
 
 3. Eddie_run_jobs_2.sh ( *e.g.: Tmp direct, trapping signals Engine, Arrays*)
 
