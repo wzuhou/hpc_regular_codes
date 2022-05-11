@@ -26,3 +26,9 @@ MY.bash_profile # just set up some alias and path
 # concat files and remove duplicated headers
 
 make_merged_files.sh
+
+# R color scheme
+
+[Rcolor.pdf](http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf)
+
+[colorPaletteCheatsheet.pdf](https://www.nceas.ucsb.edu/sites/default/files/2020-04/colorPaletteCheatsheet.pdf)
