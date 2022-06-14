@@ -1,5 +1,5 @@
 #!/bin/sh
-
+# This script shows how to use aws-cli to download data from S3 amazon service
 # see: https://github.com/aws/aws-cli
 # Before start
 # Install aws:pip or anaconda 
