@@ -32,3 +32,9 @@ make_merged_files.sh
 [Rcolor.pdf](http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf)
 
 [colorPaletteCheatsheet.pdf](https://www.nceas.ucsb.edu/sites/default/files/2020-04/colorPaletteCheatsheet.pdf)
+
+# Download data from server
+
+amazon_download_aws.sh # from amazon s3 service
+
+ftp_download_lftp_sftp.sh #download sftp using lftp command
