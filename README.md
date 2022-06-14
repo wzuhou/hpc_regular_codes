@@ -35,7 +35,7 @@ R_R_trick.R # Using text as command/variable name
 
 R_install_older_v.md # R install package oder version
 
-#R color scheme
+## R color scheme
 
 [Rcolor.pdf](http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf)
 
