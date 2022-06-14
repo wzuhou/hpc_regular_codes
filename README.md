@@ -11,10 +11,6 @@ Max Memory required: 64 GB
 
 3. Eddie_run_jobs_2.sh ( *e.g.: Tmp direct, trapping signals Engine, Arrays*)
 
-# R trick
-
-R_R_trick.R # Using text as command/variable name 
-
 # Fast remove files on hpc
 
 Fast_remove.sh
@@ -27,18 +23,21 @@ MY.bash_profile # just set up some alias and path
 
 make_merged_files.sh
 
-# R color scheme
-
-[Rcolor.pdf](http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf)
-
-[colorPaletteCheatsheet.pdf](https://www.nceas.ucsb.edu/sites/default/files/2020-04/colorPaletteCheatsheet.pdf)
-
 # Download data from server
 
 amazon_download_aws.sh # from amazon s3 service
 
 ftp_download_lftp_sftp.sh # download sftp using lftp command
 
-# R install package oder version
+# R trick
 
-R_install_older_v.md
+R_R_trick.R # Using text as command/variable name 
+
+R_install_older_v.md # R install package oder version
+
+#R color scheme
+
+[Rcolor.pdf](http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf)
+
+[colorPaletteCheatsheet.pdf](https://www.nceas.ucsb.edu/sites/default/files/2020-04/colorPaletteCheatsheet.pdf)
+
