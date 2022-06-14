@@ -40,4 +40,5 @@ amazon_download_aws.sh # from amazon s3 service
 ftp_download_lftp_sftp.sh # download sftp using lftp command
 
 # R install package oder version
-R_install_older_v.mk
+
+R_install_older_v.md
