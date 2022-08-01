@@ -1,6 +1,6 @@
-# Information for bioinformatics beginer
+# Information for bioinformatics beginner
 
-## Basic information for using linux
+## Basic information for using Linux
 Linux
 There is a babraham course,  teaching material: https://www.bioinformatics.babraham.ac.uk/training.html#Introduction%20to%20Linux%20Bootcamp
 
@@ -26,9 +26,9 @@ Review paper: [RNA sequencing: the teenage years](https://www.nature.com/article
 
 Introduction to RNA-Seq using high-performance computing - [ARCHIVED hbctraining.github.io](https://hbctraining.github.io/Intro-to-rnaseq-hpc-O2/)
 
-http://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html#interactions
+DESeq2 tutorial: http://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html#interactions
 
-DESeq2 tutorial: https://lashlock.github.io/compbio/R_presentation.html
+DESeq2 tutorial-2: https://lashlock.github.io/compbio/R_presentation.html
 
 STAR : https://github.com/alexdobin/STAR
 
@@ -38,7 +38,7 @@ Featurecounts manual: https://bioconductor.org/packages/release/bioc/vignettes/R
 
 DESeq2 tutorial: https://lashlock.github.io/compbio/R_presentation.html
 
-
+## R and python
 
 R for beginner: https://www.researchgate.net/publication/325170649_An_Introduction_to_R_for_Beginners
 
