@@ -61,6 +61,7 @@ https://www.wiki.ed.ac.uk/display/ResearchServices/Eddie
 Terminal:  MobaXterm: https://www.wiki.ed.ac.uk/display/ResearchServices/Eddie
 
 To transfer file to eddie I would recommend: Filezilla or WinSCP
+
 You should be able to connect to eddie with your login information(email and password) with the above programs
  
 vpn: https://www.ed.ac.uk/information-services/computing/desktop-personal/vpn
