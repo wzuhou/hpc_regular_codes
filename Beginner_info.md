@@ -48,7 +48,7 @@ Usage ggplot2: https://www.bioinformatics.babraham.ac.uk/training/ggplot_course/
 
 Introduction to python: https://www.bioinformatics.babraham.ac.uk/training/Introduction_to_Python/Introduction_to_Python.pdf
 
-## Edinburgh relevant
+## Roslin relevant
 
 I am also forwarding eddie information, by reading them you will be able to login to linux server
 
