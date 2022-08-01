@@ -22,9 +22,9 @@ Quality control using Fastqc: https://dnacore.missouri.edu/PDF/FastQC_Manual.pdf
 
 ## RNAseq
 
-Review paper: (RNA sequencing: the teenage years)[https://www.nature.com/articles/s41576-019-0150-2]
+Review paper: [RNA sequencing: the teenage years](https://www.nature.com/articles/s41576-019-0150-2)
 
-Introduction to RNA-Seq using high-performance computing - (ARCHIVED hbctraining.github.io)[https://hbctraining.github.io/Intro-to-rnaseq-hpc-O2/]
+Introduction to RNA-Seq using high-performance computing - [ARCHIVED hbctraining.github.io](https://hbctraining.github.io/Intro-to-rnaseq-hpc-O2/)
 
 http://bioconductor.org/packages/release/bioc/vignettes/DESeq2/inst/doc/DESeq2.html#interactions
 
