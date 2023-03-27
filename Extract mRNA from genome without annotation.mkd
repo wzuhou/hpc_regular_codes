@@ -1,0 +1,50 @@
+# Extract Sparrow gene mRNA for primer designing
+
+### Step1 Download Protein sequence from close&& well-annotated species on NCBI or Ensembl
+
+Chicken AVP and MC2R protein sequence *.fa
+
+### Step2 blast
+Using tblastn to sparrow genome
+
+```bash
+#sh run_blast_simp.sh Gal7_MC2R_AAsequence.fasta
+module load roslin/blast+/2.9.0
+input=$1 
+#blastn
+#blastp
+tblastn -query ${input} -subject GWCS.fa -out blast${input}.fmt6 -outfmt "6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore sstrand" -evalue  1e-40
+
+#Or take the mRNA/gDNA blastn to genome
+#input=Gal7_MC2R_gDNA.fasta
+#blastn -subject  ${input} -query GWCS_AVT_cDAN.fa -out blast${input}.fmt6 -outfmt "6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore sstrand" -max_target_seqs 5 -max_hsps 5
+```
+
+### Step3 igv validation
+
+**Manually** confirm the exon starting and ending position.
+
+`tblastnGal7_MC2R_AA_sequence.bed`
+
+`tblastnGal7_AVP_AA_sequence.bed`
+
+
+**NB:** if gene on the - strand, remeber to swap the start and end position
+
+**NB:** if multiple exons identify,first extract each exon sequence, then manually merge them into one long mRNA sequence(Always exon 1,2,3)
+
+
+### Step4 extract the sequence
+
+```sh
+#Using the -name option, one can set the FASTA header for each extracted sequence to be the “name” columns from the BED feature.The last one
+#e.g. bedtools getfasta -fi GWCS.fa -bed MC2R_cDAN_mapped_bed_exons.bed -fo GWCS_MC2R_cDAN.fa -name -s
+
+bedtools getfasta -fi GWCS.fa -bed tblastnGal7_AVP_AA_sequence.bed -fo GWCS_AVT_mRNA.fa -name -s
+
+bedtools getfasta -fi GWCS.fa -bed tblastnGal7_MC2R_AA_sequence.bed -fo GWCS_MC2R_mRNA.fa -name -s
+```
+
+### Step5 if multiple exons
+**NB:** if multiple exons identify,first extract each exon sequence, then manually merge them into one long mRNA sequence.
+**Always exon 1 2 3, if '-', then the extracted seq is aleady rev-com, then just concatenate them into one**
