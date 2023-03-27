@@ -3,6 +3,7 @@
 ### Step1 Download Protein sequence from close&& well-annotated species on NCBI or Ensembl
 
 Chicken AVP and MC2R protein sequence *.fa
+
 **Ensembl and NCBI may be different**
 
 ### Step2 blast
