@@ -33,7 +33,7 @@ ftp_download_lftp_sftp.sh # download sftp using lftp command
 
 R_R_trick.R # Using text as command/variable name 
 
-R_install_older_v.md # R install package oder version
+R_install_older_v.md # R install package of older version
 
 ## R color scheme
 
