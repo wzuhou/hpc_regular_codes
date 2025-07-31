@@ -43,13 +43,14 @@ aTrack <- AnnotationTrack(start = c(1751075,1761021),end=c(1751115,1761061),
 #displayPars(grtrack) <- list(background.panel = "#FFFEDB", col = NULL)
 plotTracks(list(ideoTrack,axisTrack,grtrack,aTrack),from = 1740000, to = 1770000,transcriptAnnotation="gene",groupAnnotation = "id",col.line = "black",just.group = "left")
 
-pdf('./test_Siyuan.pdf',width=10,height=3.5)
+pdf('./test.pdf',width=10,height=3.5)
 plotTracks(list(ideoTrack,axisTrack,grtrack,aTrack),from = 1745000, to = 1768000,transcriptAnnotation="gene",groupAnnotation = "id",col.line = "black",just.group = "left")
 #without ideo track
 #plotTracks(list(axisTrack,grtrack,aTrack),from = 1745000, to = 1768000,transcriptAnnotation="gene",groupAnnotation = "id",col.line = "black",just.group = "left")
 dev.off()
-#----------------
+#########################
 head(gene(grtrack))
 head(transcript(grtrack))
 head(exon(grtrack))
 head(symbol(grtrack))
+#END#
